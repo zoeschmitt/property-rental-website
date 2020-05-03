@@ -1,0 +1,42 @@
+.fb{
+        width: 500px;
+        height: 30px;
+        margin-bottom: 10px;
+
+    }
+    #submits{
+        margin-top: 10px;
+        padding: 7px 0px;
+        color: black;
+        border-radius: 3px;
+        text-decoration: none;
+        display: block;
+        background-color: lightgray;
+        border: 1px solid black;
+        width: 500px;
+        transition-duration: 0.5s;
+    }
+    #submits:hover{
+        border: 1px solid black;
+        color: black;
+        text-decoration: none;
+        background-color: antiquewhite;
+    }
+    #logs{
+        margin-top: 10px;
+        padding: 7px 0px;
+        color: black;
+        border-radius: 3px;
+        text-decoration: none;
+        display: block;
+        background-color: white;
+        border: 1px solid black;
+        width: 150px;
+        transition-duration: 0.4s;
+    }
+    #logs {
+        border: 1px solid black;
+        color: black;
+        text-decoration: none;
+        background-color: lightgray;
+    }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Find Your Next Vacation Rental!</title>
+    <link href="main_style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+        <div class="row">
+            <div class="nav">
+                <li><a href="home.html"> HOME </a></li>
+                <li><a href="search.html"> SEARCH </a></li>
+                <li><a href="cancellation.html"> CANCELLATIONS </a></li>
+                <li><a href="feedback.html"> FEEDBACK </a></li>
+                <li><a href="profile.html"> ACCOUNT </a></li>
+            </div>
+        </div>
+    <div class="box">
+<center>
+<div style="text-align: center; width: 50%">
+        <p style="margin-top: 100px; margin-bottom: 50px; font-size:25px">Cancel a reservation</p>
+        </div>
+        <form action="login_user.php" method="post" style="margin-bottom: 50px">
+            <input class="fb" type="text" placeholder="Please enter Reservation Number" name="reservation" style="display: block"/>
+            <p>Note: A reservation can be cancelled if the current date is no less than five (5) days before the rental initiation date.</p>
+        </form>
+        <form>
+		<button id="logs" type="submit" value="submit">Submit</button>
+	</form>
+    <?php
+		include_once 'includes/dbh.php';
+
+
+		$sql = "SELECT FROM reservations WHERE reservationNum = reservation
+		VALUES ();";
+		mysqli_query($conn, $sql);
+
+		header("Location: confirmation.php?cancellation=success")
+
+	?>
+     </center>
+        </div>
+    </header>
+    </body>
+</html>
